@@ -1,0 +1,26 @@
+{
+  "parameters": {},
+  "storage": {
+    "input": {
+      "tables": [
+        {
+          "source": "in.c-data.login_history_original",
+          "destination": "login_history_original",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        }
+      ]
+    },
+    "output": {
+      "tables": [
+        {
+          "destination": "out.c-data.out_login_history",
+          "source": "out_login_history"
+        }
+      ]
+    }
+  }
+}
