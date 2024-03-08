@@ -1,3 +1,5 @@
+/*whatever*/
+
 CREATE TABLE "out_login_history"
 	AS
   	SELECT *
