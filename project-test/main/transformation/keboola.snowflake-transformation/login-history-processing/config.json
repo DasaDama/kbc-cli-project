@@ -17,7 +17,7 @@
     "output": {
       "tables": [
         {
-          "destination": "out.c-data.out_login_history",
+          "destination": "out.c-data.out_login_history_new",
           "source": "out_login_history"
         }
       ]
