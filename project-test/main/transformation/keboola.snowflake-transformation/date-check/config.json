@@ -1,0 +1,33 @@
+{
+  "parameters": {},
+  "storage": {
+    "input": {
+      "tables": [
+        {
+          "source": "{{:default-bucket:extractor/keboola.ex-currency/my-ecb-currency-rates-data-source}}.rates",
+          "destination": "rates",
+          "where_column": "",
+          "where_values": [],
+          "where_operator": "eq",
+          "columns": [],
+          "keep_internal_timestamp_column": false
+        }
+      ]
+    },
+    "output": {
+      "tables": [
+        {
+          "destination": "out.c-date_check.exit_code_table",
+          "source": "exit_code_table",
+          "incremental": true,
+          "delete_where_column": "",
+          "delete_where_operator": "eq",
+          "delete_where_values": [],
+          "primary_key": [
+            "date"
+          ]
+        }
+      ]
+    }
+  }
+}

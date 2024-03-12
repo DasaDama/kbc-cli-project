@@ -1,0 +1,9 @@
+{
+  "name": "keboola.ex-currency-1098014983",
+  "enabled": true,
+  "task": {
+    "mode": "run",
+    "configPath": "extractor/keboola.ex-currency/my-ecb-currency-rates-data-source"
+  },
+  "continueOnFailure": false
+}

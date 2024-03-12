@@ -1,0 +1,9 @@
+{
+  "name": "keboola.snowflake-transformation-1098016094",
+  "enabled": true,
+  "task": {
+    "mode": "run",
+    "configPath": "transformation/keboola.snowflake-transformation/date-check"
+  },
+  "continueOnFailure": false
+}

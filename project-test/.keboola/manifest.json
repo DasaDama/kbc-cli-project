@@ -39,9 +39,44 @@
   "configurations": [
     {
       "branchId": 849481,
+      "componentId": "keboola.ex-currency",
+      "id": "1098014983",
+      "path": "extractor/keboola.ex-currency/my-ecb-currency-rates-data-source",
+      "rows": []
+    },
+    {
+      "branchId": 849481,
+      "componentId": "keboola.orchestrator",
+      "id": "1098016854",
+      "path": "other/keboola.orchestrator/trial-error",
+      "rows": []
+    },
+    {
+      "branchId": 849481,
+      "componentId": "keboola.scheduler",
+      "id": "1098017523",
+      "path": "schedules/scheduler-for-1098016854",
+      "relations": [
+        {
+          "componentId": "keboola.orchestrator",
+          "configId": "1098016854",
+          "type": "schedulerFor"
+        }
+      ],
+      "rows": []
+    },
+    {
+      "branchId": 849481,
       "componentId": "keboola.snowflake-transformation",
       "id": "1096290112",
       "path": "transformation/keboola.snowflake-transformation/login-history-processing",
+      "rows": []
+    },
+    {
+      "branchId": 849481,
+      "componentId": "keboola.snowflake-transformation",
+      "id": "1098016094",
+      "path": "transformation/keboola.snowflake-transformation/date-check",
       "rows": []
     }
   ]
